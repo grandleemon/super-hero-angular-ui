@@ -1,1 +1,15 @@
-<p>super-hero works!</p>
+<div *ngIf="loading">
+  Loading...
+</div>
+
+<div *ngIf="heroDetails">
+  <p>Id: {{ heroDetails.id }}</p>
+  <p>Name: {{ heroDetails.name }}</p>
+  <p>First name: {{ heroDetails.firstName }}</p>
+  <p>Last name: {{ heroDetails.lastName }}</p>
+  <p>Place: {{ heroDetails.place }}</p>
+</div>
+
+<div>
+  <a routerLink="/">Back</a>
+</div>
