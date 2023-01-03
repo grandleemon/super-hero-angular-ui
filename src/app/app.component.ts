@@ -6,15 +6,6 @@ import {SuperHeroService} from "./services/super-hero.service";
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit {
-  title = 'SuperHeroUI'
-  loading = false
+export class AppComponent {
 
-  constructor(public readonly superHeroService: SuperHeroService) {
-  }
-
-  ngOnInit(): void {
-    this.loading = true
-    this.superHeroService.getAllSuperHeroes().subscribe(() => this.loading = false)
-  }
 }

@@ -1,11 +1,3 @@
 <div class="container">
-  <div *ngIf="loading">Loading...</div>
-
-  <div *ngIf="superHeroService.superHeroes">
-    <div *ngFor="let superHero of superHeroService.superHeroes">
-      <a routerLink="super-hero/{{superHero.id}}">{{ superHero.name }}</a>
-    </div>
-  </div>
-
   <router-outlet></router-outlet>
 </div>
